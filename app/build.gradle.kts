@@ -1,9 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-//    kotlin("kapt") version "1.9.0"
-//    alias(libs.plugins.hilt)
-//    kotlin("kapt")
 }
 
 android {
@@ -51,10 +48,6 @@ android {
         }
     }
 
-//    kapt
-//    {
-//        correctErrorTypes = true
-//    }
 }
 
 dependencies {
