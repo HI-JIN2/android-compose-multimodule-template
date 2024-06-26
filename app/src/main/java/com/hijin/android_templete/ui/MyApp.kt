@@ -1,26 +1,26 @@
 package com.yourssu.soomsil.ui
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.navigation.NavDestination
-import androidx.navigation.NavDestination.Companion.hierarchy
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
-import com.yourssu.design.system.compose.component.BottomBarItem
-import com.yourssu.soomsil.navigation.SoomsilNavHost
-import com.yourssu.soomsil.navigation.TopLevelDestination
-import com.yourssu.soomsil.navigation.navigateToTopLevelDestination
-import com.yourssu.soomsil.navigation.topDestinations
+//import androidx.compose.foundation.layout.Column
+//import androidx.compose.foundation.layout.fillMaxWidth
+//import androidx.compose.foundation.layout.padding
+//import androidx.compose.runtime.Composable
+//import androidx.compose.ui.Modifier
+//import androidx.navigation.NavDestination
+//import androidx.navigation.NavDestination.Companion.hierarchy
+//import androidx.navigation.NavHostController
+//import androidx.navigation.compose.currentBackStackEntryAsState
+//import androidx.navigation.compose.rememberNavController
+//import com.yourssu.design.system.compose.component.BottomBarItem
+//import com.yourssu.soomsil.navigation.SoomsilNavHost
+//import com.yourssu.soomsil.navigation.TopLevelDestination
+//import com.yourssu.soomsil.navigation.navigateToTopLevelDestination
+//import com.yourssu.soomsil.navigation.topDestinations
 
-@Composable
-fun MyApp(
-    modifier: Modifier = Modifier,
-    navController: NavHostController = rememberNavController(),
-) {
+//@Composable
+//fun MyApp(
+//    modifier: Modifier = Modifier,
+//    navController: NavHostController = rememberNavController(),
+//) {
 //    Scaffold(
 //        bottomBar = {
 //            BottomBar(
@@ -41,7 +41,7 @@ fun MyApp(
 //            )
 //        }
 //    }
-}
+//}
 
 //@Composable
 //private fun BottomBar(
