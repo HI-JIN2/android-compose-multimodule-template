@@ -1,16 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.hijin.data"
+    namespace = "com.hijin.network"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hijin.data"
+        applicationId = "com.hijin.network"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -38,8 +36,10 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
-    implementation(project(":core:network"))//core-network 맞나
+//    implementation(project(":data"))
+
+    implementation(libs.retrofit2)
+    implementation(libs.okhttp3)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -47,12 +47,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(libs.hilt.android)
-    ksp (libs.hilt.compiler)
-
-    implementation(libs.kotlinx.serialization.json)
-
-    implementation(libs.retrofit2)
-
 }

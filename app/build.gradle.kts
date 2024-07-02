@@ -52,9 +52,11 @@ android {
 
 dependencies {
 
-//    implementation(project(":domain"))
-//    implementation(project(":data"))
-//    implementation(project(":feature"))
+    implementation(project(":domain"))
+    implementation(project(":data"))
+    implementation(project(":feature:auth"))
+    implementation(project(":feature:main"))
+    implementation(project(":feature:my_page"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
