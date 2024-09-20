@@ -1,4 +1,4 @@
-package com.hijin.data.api
+package com.hijin.data
 
 class AuthAuthenticator {
 }

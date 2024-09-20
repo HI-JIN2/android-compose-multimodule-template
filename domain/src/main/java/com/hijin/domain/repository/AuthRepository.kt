@@ -1,11 +1,10 @@
 package com.hijin.domain.repository
 
-import com.hijin.data.model.AnnouncementResponse
-import com.hijin.domain.ApiResult
+import com.hijin.domain.model.User
 import kotlinx.coroutines.flow.Flow
 
 interface AuthRepository {
 
-    suspend fun getAnnouncement(): Flow<ApiResult<AnnouncementResponse>>
+    suspend fun logIn(): User
 
 }

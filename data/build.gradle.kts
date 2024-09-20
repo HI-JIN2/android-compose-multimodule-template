@@ -1,8 +1,10 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
+    id("com.google.dagger.hilt.android")
+
 }
 
 android {
@@ -10,13 +12,19 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hijin.data"
+//        applicationId = "com.hijin.data"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    testOptions {
+        targetSdk = 34
+        // ... other test options
+    }
+
+    lint {
+        targetSdk = 34
+        // ... other lint options
     }
 
     buildTypes {
@@ -39,7 +47,6 @@ android {
 
 dependencies {
     implementation(project(":domain"))
-    implementation(project(":core:network"))//core-network 맞나
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

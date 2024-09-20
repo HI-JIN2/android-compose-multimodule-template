@@ -1,4 +1,4 @@
-package com.yourssu.soomsil.ui
+package com.hijin.android_templete.ui
 
 //import androidx.compose.foundation.layout.Column
 //import androidx.compose.foundation.layout.fillMaxWidth

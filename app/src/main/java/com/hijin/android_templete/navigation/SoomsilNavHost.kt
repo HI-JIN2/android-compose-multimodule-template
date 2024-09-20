@@ -1,4 +1,4 @@
-package com.yourssu.soomsil.navigation
+package com.hijin.android_templete.navigation
 
 //import androidx.compose.runtime.Composable
 //import androidx.compose.ui.Modifier
