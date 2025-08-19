@@ -1,18 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
-    namespace = "com.hijin.android_templete"
+    namespace = "com.hijin.feature1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hijin.android_templete"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -47,17 +46,17 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-
+//    kapt
+//    {
+//        correctErrorTypes = true
+//    }
 }
 
 dependencies {
-
-    implementation(project(":domain"))
-    implementation(project(":data"))
+    // connect module dependency
     implementation(project(":core:design-system"))
-    implementation(project(":feature:feature1"))
-    implementation(project(":feature:feature3"))
-    implementation(project(":feature:feature2"))
+    implementation(project(":domain"))
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -68,6 +67,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.navigation.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -75,4 +75,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.compose.compiler)
+
+    implementation (libs.hilt.android)
+    ksp (libs.hilt.compiler)
+
 }
