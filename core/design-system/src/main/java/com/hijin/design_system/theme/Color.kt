@@ -1,4 +1,4 @@
-package com.hijin.design_system.ui.theme
+package com.hijin.design_system.theme
 
 import androidx.compose.ui.graphics.Color
 
