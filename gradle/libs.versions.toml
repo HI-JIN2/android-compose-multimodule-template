@@ -3,7 +3,7 @@
 agp = "8.10.1"
 
 ## Kotlin
-kotlin = "2.0.21"
+kotlin = "2.2.0"
 kotlinxSerializationJson = "1.7.3"
 
 ## Coroutine
@@ -30,11 +30,8 @@ coil = "3.0.4"
 ## Lottie
 lottie = "6.6.6"
 
-## Kapt
-kapt = "1.8.10"
-
 ## Kotlin Symbol Processing (KSP)
-ksp = "2.0.0-1.0.23"
+ksp = "2.2.0-2.0.2"
 
 ## Network
 retrofit = "2.9.0"
