@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hijin.design_system"
+    namespace = "com.android.design_system"
 }
 
 dependencies {
