@@ -32,8 +32,6 @@ internal fun Project.configureComposeAndroid() {
 
             androidTestImplementation(platform(bom))
             androidTestImplementation(libs.findLibrary("androidx-ui-test-junit4").get())
-            testImplementation(libs.findLibrary("kotlin-test").get())
-
         }
     }
 

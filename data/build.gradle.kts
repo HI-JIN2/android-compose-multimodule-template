@@ -7,4 +7,6 @@ dependencies {
 
     implementation(libs.hilt.core)
     implementation(libs.coroutines.core)
+
+    testImplementation(kotlin("test"))
 }

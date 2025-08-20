@@ -19,4 +19,5 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.core.designSystem)
 
+    implementation(libs.timber)
 }

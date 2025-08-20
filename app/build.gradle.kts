@@ -51,4 +51,5 @@ dependencies {
     implementation(projects.feature.feature1)
     implementation(projects.feature.feature2)
     implementation(projects.feature.feature3)
+    implementation(libs.timber)
 }

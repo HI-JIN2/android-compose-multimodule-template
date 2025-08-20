@@ -33,6 +33,9 @@ lottie = "6.6.6"
 ## Kotlin Symbol Processing (KSP)
 ksp = "2.2.0-2.0.2"
 
+## Timber for logging
+timber = "5.0.1"
+
 ## Network
 retrofit = "2.9.0"
 okhttp = "4.12.0"
@@ -94,6 +97,9 @@ coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", versi
 
 ## Lottie
 lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
+
+## Timber
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 # retrofit
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
