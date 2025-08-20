@@ -31,5 +31,9 @@ gradlePlugin {
             id = "template.kotlin.library"
             implementationClass = "com.android.template.TemplateKotlinLibraryPlugin"
         }
+        register("templateHiltPlugin") {
+            id = "template.hilt.plugin"
+            implementationClass = "com.android.template.TemplateHiltPlugin"
+        }
     }
 }

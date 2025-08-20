@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.template.android.application)
     alias(libs.plugins.template.android.compose)
+    alias(libs.plugins.template.hilt.plugin)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -49,6 +51,4 @@ dependencies {
     implementation(projects.feature.feature1)
     implementation(projects.feature.feature2)
     implementation(projects.feature.feature3)
-//    implementation(projects.local)
-//    implementation(projects.remote)
 }
