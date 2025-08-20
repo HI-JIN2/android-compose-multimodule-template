@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Templete"
+rootProject.name = "Android_Templete"
 include(":app")
 include(":data")
 include(":domain")
@@ -28,3 +28,4 @@ include(":feature:feature1")
 include(":feature:feature2")
 include(":core:design-system")
 include(":core:network")
+includeBuild("build-logic")
