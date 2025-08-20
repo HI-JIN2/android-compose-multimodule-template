@@ -1,15 +1,11 @@
-package com.hanbang.satto
+package com.android.template
 
 import convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
-class SattoAndroidApplicationPlugin : Plugin<Project> {
+
+class TemplateAndroidApplicationPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {

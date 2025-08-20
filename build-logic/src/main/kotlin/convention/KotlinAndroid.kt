@@ -6,11 +6,7 @@ import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
+
 internal fun Project.configureKotlinAndroid() {
 
     pluginManager.apply("org.jetbrains.kotlin.android")

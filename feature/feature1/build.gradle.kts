@@ -1,11 +1,11 @@
 plugins {
-    alias(libs.plugins.satto.android.feature)
-    alias(libs.plugins.satto.android.compose)
+    alias(libs.plugins.template.android.feature)
+    alias(libs.plugins.template.android.compose)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "com.hijin.feature1"
+    namespace = "com.android.feature1"
     compileSdk = 35
 
     defaultConfig {

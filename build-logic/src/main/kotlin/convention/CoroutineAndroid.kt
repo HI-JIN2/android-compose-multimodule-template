@@ -3,11 +3,7 @@ package convention
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
+
 internal fun Project.configureCoroutineAndroid() {
     val libs = extensions.libs
     configureCoroutineKotlin()

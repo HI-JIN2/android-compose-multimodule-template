@@ -1,3 +1,3 @@
 plugins {
-    alias(libs.plugins.satto.kotlin.library)
+    alias(libs.plugins.template.kotlin.library)
 }

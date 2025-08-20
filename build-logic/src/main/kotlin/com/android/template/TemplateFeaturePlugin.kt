@@ -1,21 +1,17 @@
-package com.hanbang.satto
+package com.android.template
 
 import convention.androidExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
-class SattoFeaturePlugin : Plugin<Project> {
+
+class TemplateFeaturePlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("satto.android.library")
-                apply("satto.android.compose")
+                apply("template.android.library")
+                apply("template.android.compose")
             }
 
             androidExtension.apply {

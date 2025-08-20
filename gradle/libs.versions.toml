@@ -92,11 +92,11 @@ kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref =
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 ## Build-Logic
-satto-android-application = { id = "satto.android.application", version = "1" }
-satto-android-library = { id = "satto.android.library", version = "1" }
-satto-kotlin-library = { id = "satto.kotlin.library", version = "1" }
-satto-android-compose = { id = "satto.android.compose", version = "1" }
-satto-android-feature = { id = "satto.android.feature", version = "1" }
+template-android-application = { id = "template.android.application", version = "1" }
+template-android-library = { id = "template.android.library", version = "1" }
+template-kotlin-library = { id = "template.kotlin.library", version = "1" }
+template-android-compose = { id = "template.android.compose", version = "1" }
+template-android-feature = { id = "template.android.feature", version = "1" }
 
 [bundles]
 coroutines = ["coroutines-core", "coroutines-android"]

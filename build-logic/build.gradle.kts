@@ -11,25 +11,25 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        register("sattoAndroidApplication") {
-            id = "satto.android.application"
-            implementationClass = "com.hanbang.satto.SattoAndroidApplicationPlugin"
+        register("templateAndroidApplication") {
+            id = "template.android.application"
+            implementationClass = "com.android.template.TemplateAndroidApplicationPlugin"
         }
-        register("sattoAndroidLibrary") {
-            id = "satto.android.library"
-            implementationClass = "com.hanbang.satto.SattoAndroidLibraryPlugin"
+        register("templateAndroidLibrary") {
+            id = "template.android.library"
+            implementationClass = "com.android.template.TemplateAndroidLibraryPlugin"
         }
-        register("sattoComposePlugin") {
-            id = "satto.android.compose"
-            implementationClass = "com.hanbang.satto.SattoComposePlugin"
+        register("templateComposePlugin") {
+            id = "template.android.compose"
+            implementationClass = "com.android.template.TemplateComposePlugin"
         }
-        register("sattoFeaturePlugin") {
-            id = "satto.android.feature"
-            implementationClass = "com.hanbang.satto.SattoFeaturePlugin"
+        register("templateFeaturePlugin") {
+            id = "template.android.feature"
+            implementationClass = "com.android.template.TemplateFeaturePlugin"
         }
-        register("sattoKotlinLibrary") {
-            id = "satto.kotlin.library"
-            implementationClass = "com.hanbang.satto.SattoKotlinLibraryPlugin"
+        register("templateKotlinLibrary") {
+            id = "template.kotlin.library"
+            implementationClass = "com.android.template.TemplateKotlinLibraryPlugin"
         }
     }
 }

@@ -1,15 +1,11 @@
-package com.hanbang.satto
+package com.android.template
 
 import convention.configurePureKotlin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
-class SattoKotlinLibraryPlugin : Plugin<Project> {
+
+class TemplateKotlinLibraryPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             configurePureKotlin()

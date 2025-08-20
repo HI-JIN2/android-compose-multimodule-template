@@ -9,11 +9,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-/**
- *
- * @author   JGeun
- * @created  2025/07/14
- */
+
 internal fun Project.configurePureKotlin() {
     with(pluginManager) {
         apply("java-library")

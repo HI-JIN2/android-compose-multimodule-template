@@ -1,15 +1,15 @@
 plugins {
-    alias(libs.plugins.satto.android.application)
-    alias(libs.plugins.satto.android.compose)
+    alias(libs.plugins.template.android.application)
+    alias(libs.plugins.template.android.compose)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "com.hijin.android_templete"
+    namespace = "com.android.android_templete"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.hijin.android_templete"
+        applicationId = "com.android.android_templete"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
